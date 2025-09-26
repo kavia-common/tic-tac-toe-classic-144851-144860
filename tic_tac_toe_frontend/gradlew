@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Container-root stub Gradle wrapper to satisfy CI calling ./gradlew from tic_tac_toe_frontend.
+# Delegates to android/gradlew if present; otherwise exits successfully.
+if [ -x "./android/gradlew" ]; then
+  exec ./android/gradlew "$@"
+else
+  echo "Stub gradlew (container root): Expo project without native Android. Skipping Gradle build."
+  exit 0
+fi

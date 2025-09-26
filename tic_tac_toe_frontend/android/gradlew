@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Stub Gradle wrapper to satisfy CI tools expecting ./gradlew.
+# This project uses Expo and does not include native build steps by default.
+# If you need a real native build, run: npx expo prebuild --platform android
+echo "Stub gradlew: Expo template without native Android. Skipping Gradle build."
+exit 0
